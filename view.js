@@ -6,8 +6,7 @@ export default class View {
         this.loader = document.querySelector('.loader');
     }
     addGifToWrapper = (data) => {
-        this.wrapper.innerHTML = ''
-        data.data.map((item) => {
+        data.data.forEach((item) => {
             this.wrapper.innerHTML += `<div><img  class="imageStyle" src=${item.images.original.url} alt=${item.alt} tilte=${item.alt}/></div>`
         })
 

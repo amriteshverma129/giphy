@@ -59,17 +59,15 @@
     }
     .loader{
        height:5px;
+       position: fixed;
      //  width:100%;
        background-color: blue;
+       transform-origin: left;
+       animation: loadingInfinite 1000ms ease-in 0s infinite alternate;
     }
     @keyframes loadingInfinite {
         0% { transform: scaleX(0.2) translateX(0)}
         50% { transform: scaleX(0.8) translateX(100%)}
         100% { transform: scaleX(0.2) translateX(0)}
-      }
-      
-      .loader {
-        transform-origin: left;
-        animation: loadingInfinite 1000ms ease-in 0s infinite alternate;
       }
 }

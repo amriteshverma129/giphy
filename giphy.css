@@ -85,7 +85,12 @@
 
 .container .loader {
   height: 5px;
+  position: fixed;
   background-color: blue;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation: loadingInfinite 1000ms ease-in 0s infinite alternate;
+          animation: loadingInfinite 1000ms ease-in 0s infinite alternate;
 }
 
 @-webkit-keyframes loadingInfinite {
@@ -116,12 +121,5 @@
     -webkit-transform: scaleX(0.2) translateX(0);
             transform: scaleX(0.2) translateX(0);
   }
-}
-
-.container .loader {
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-animation: loadingInfinite 1000ms ease-in 0s infinite alternate;
-          animation: loadingInfinite 1000ms ease-in 0s infinite alternate;
 }
 /*# sourceMappingURL=giphy.css.map */
