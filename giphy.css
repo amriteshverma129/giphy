@@ -86,6 +86,7 @@
 .container .loader {
   height: 5px;
   position: fixed;
+  width: 100%;
   background-color: blue;
   -webkit-transform-origin: left;
           transform-origin: left;

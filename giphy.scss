@@ -60,7 +60,7 @@
     .loader{
        height:5px;
        position: fixed;
-     //  width:100%;
+       width:100%;
        background-color: blue;
        transform-origin: left;
        animation: loadingInfinite 1000ms ease-in 0s infinite alternate;
